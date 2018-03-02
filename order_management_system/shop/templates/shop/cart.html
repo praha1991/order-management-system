@@ -1,0 +1,9 @@
+{% if cart_list %}
+    <ul>
+    {% for cart in cart_list %}
+        <li>{{ cart.user.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cart items</p>
+{% endif %}
